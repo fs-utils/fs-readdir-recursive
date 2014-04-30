@@ -2,6 +2,12 @@
 
 Read a directory recursively.
 
+## Install
+
+```bash
+npm install fs-readdir-recursive
+```
+
 ## Example
 
 ```js

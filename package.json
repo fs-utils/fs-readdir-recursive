@@ -1,7 +1,7 @@
 {
   "name": "fs-readdir-recursive",
   "description": "Recursively read a directory",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "test": "make test"
   },
