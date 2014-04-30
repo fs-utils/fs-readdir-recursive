@@ -9,7 +9,7 @@ function read(root, filter, files, prefix) {
   filter = filter || noDotFiles
 
   var dir = path.join(root, prefix)
-  if (fs.lstatSync(dir).isDirectory())
+  if (fs.lstatSync(dir).isDirectory() || fs.lstatSync(dir).isSymbolicLink())
     fs.readdirSync(dir)
     .filter(filter)
     .forEach(function (name) {
