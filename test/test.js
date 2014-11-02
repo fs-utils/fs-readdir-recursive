@@ -30,6 +30,19 @@ describe('fs.readdirSyncRecursive()', function () {
     done()
   })
 
+  it('should work with the symlinked file', function (done) {
+    var linkname = __filename + '-link'
+    fs.symlinkSync(__filename, linkname, 'file')
+
+    var files = read(__dirname).sort();
+
+    files.length.should.equal(2)
+    files.should.eql(['test.js', 'test.js-link'])
+
+    fs.unlinkSync(linkname)
+    done()
+  })
+
   it('should work in the symlinked directory', function (done) {
     var linkname = __dirname + '-link'
     fs.symlinkSync(__dirname, linkname, 'dir')
