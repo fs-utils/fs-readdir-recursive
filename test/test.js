@@ -1,5 +1,6 @@
 var fs = require('fs')
 var path = require('path')
+var should = require('should')
 
 var read = require('../')
 
@@ -15,14 +16,14 @@ describe('fs.readdirSyncRecursive()', function () {
 
   it('should work at the root with a filter', function (done) {
     var files = read(path.join(__dirname, '..'), function (name) {
-      return name[0] !== '.' && name !== 'node_modules'
+      return name[0] !== '.' && name !== 'node_modules' && name !== 'coverage'
     })
 
     files.length.should.equal(5)
     files.sort().should.eql([
       'test/test.js',
       'index.js',
-      'Makefile',
+      'LICENSE',
       'package.json',
       'README.md'
     ].sort())
@@ -61,14 +62,14 @@ describe('fs.readdirSyncRecursive()', function () {
     fs.symlinkSync(path.join(__dirname, '..'), linkname, 'dir')
 
     var files = read(linkname, function (name) {
-      return name[0] !== '.' && name !== 'node_modules'
+      return name[0] !== '.' && name !== 'node_modules' && name !== 'coverage'
     })
 
     files.length.should.equal(5)
     files.sort().should.eql([
       'test/test.js',
       'index.js',
-      'Makefile',
+      'LICENSE',
       'package.json',
       'README.md'
     ].sort())

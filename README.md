@@ -1,4 +1,12 @@
-# fs.readdirSyncRecursive [![Build Status](https://travis-ci.org/jonathanong/fs-readdir-recursive.png)](https://travis-ci.org/jonathanong/fs-readdir-recursive)
+# fs.readdirSyncRecursive
+
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
+[![Dependency Status][david-image]][david-url]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
+[![Gittip][gittip-image]][gittip-url]
 
 Read a directory recursively.
 
@@ -15,7 +23,7 @@ var read = require('fs-readdir-recursive')
 read(__dirname) === [
   'test/test.js',
   'index.js',
-  'Makefile',
+  'LICENSE',
   'package.json',
   'README.md'
 ]
@@ -35,26 +43,19 @@ function (x) {
 
 Which basically just ignores `.` files.
 
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2013 Jonathan Ong me@jongleberry.com
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+[npm-image]: https://img.shields.io/npm/v/fs-readdir-recursive.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/fs-readdir-recursive
+[github-tag]: http://img.shields.io/github/tag/fs-utils/fs-readdir-recursive.svg?style=flat-square
+[github-url]: https://github.com/fs-utils/fs-readdir-recursive/tags
+[travis-image]: https://img.shields.io/travis/fs-utils/fs-readdir-recursive.svg?style=flat-square
+[travis-url]: https://travis-ci.org/fs-utils/fs-readdir-recursive
+[coveralls-image]: https://img.shields.io/coveralls/fs-utils/fs-readdir-recursive.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/fs-utils/fs-readdir-recursive
+[david-image]: http://img.shields.io/david/fs-utils/fs-readdir-recursive.svg?style=flat-square
+[david-url]: https://david-dm.org/fs-utils/fs-readdir-recursive
+[license-image]: http://img.shields.io/npm/l/fs-readdir-recursive.svg?style=flat-square
+[license-url]: LICENSE
+[downloads-image]: http://img.shields.io/npm/dm/fs-readdir-recursive.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/fs-readdir-recursive
+[gittip-image]: https://img.shields.io/gratipay/jonathanong.svg?style=flat-square
+[gittip-url]: https://gratipay.com/jonathanong/
