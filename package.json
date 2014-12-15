@@ -18,19 +18,9 @@
     "url": "http://jongleberry.com",
     "twitter": "https://twitter.com/jongleberry"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jonathanong/fs-readdir-recursive.git"
-  },
+  "repository": "fs-utils/fs-readdir-recursive",
   "files": [
     "index.js"
   ],
-  "bugs": {
-    "url": "https://github.com/jonathanong/fs-readdir-recursive/issues",
-    "email": "me@jongleberry.com"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">= 0.10"
-  }
+  "license": "MIT"
 }
