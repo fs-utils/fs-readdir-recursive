@@ -104,4 +104,8 @@ describe('fs.readdirSyncRecursive()', function () {
       fs.unlinkSync(linkname)
     }
   })
+
+  it('should return empty array', function () {
+      read('non-exist-dir').should.eql([])
+  })
 })
