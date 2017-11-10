@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "istanbul": "0",
-    "mocha": "*",
+    "mocha": "3",
     "should": "*"
   },
   "author": {
